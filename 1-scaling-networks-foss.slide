@@ -138,13 +138,13 @@ IP (internet layer):
 ## VxLAN?
 
 - Encapsulation technique
-  - Ethernet frames + VxLAN header are packed into UDP packets
-  - Packet is send to remote target, decapsulated and injected into target L2 domain
-  - Up to 2^32 distinct L2-domains are supported
-  - Each L2-domain is tagged with a VNI (virtual network identifiert) that is encoded in the VxLAN packet
+  - ethernet frames + VxLAN header are packed into UDP packets
+  - packet is send to remote target, decapsulated and injected into target L2 domain
+  - up to 2^32 distinct L2-domains are supported
+  - each L2-domain is tagged with a VNI (virtual network identifiert) that is encoded in the VxLAN packet
   - ethernet frames can be equipped with 802.1Q / 802.1ad header
     - possible, lacks hardware support
-  - Hosts en- and decapsulating VxLAN traffic are called VTEP
+  - hosts en- and decapsulating VxLAN traffic are called VTEP
     - VTEP: virtual tunnel endpoint
 
 ## BGP?
